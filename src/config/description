@@ -1,0 +1,28 @@
+routes et endpoints pour l'application
+
+exemple de code endpoint :
+export const APIS: any = {
+  AUTH: {
+    START_KEYCLOAK_LOGIN: { url: `/authorization/keycloak`, method: 'GET' },
+    CHALLENGE_INFO: {
+      url: `/public/challenge-info`,
+      method: 'GET',
+      useMock: false,
+    },
+}
+
+example de route :
+
+const layout = lazy(() => import('./Layout'))
+
+const MY_ROUTE: IRoute[] = [
+  {
+    path: 'private/*',
+
+    element: React.createElement(layout),
+
+    name: 'private',
+  },
+]
+
+export default MY_ROUTE
