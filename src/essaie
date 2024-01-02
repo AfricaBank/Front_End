@@ -1,3 +1,2 @@
-Nous allons effectuer les pull sur cette branch on gardera la branche main comme release donc lors de vos merge request la branche cible est la develop et si tout fonctionne bien on va la merge vers la branche main comme ca on s'assure que la branche main reste intacte
+Nous allons effectuer les pull sur cette branch on gardera la branche main comme release donc lors de vos merge request la branche cible est la develop et si tout fonctionne bien on va la merge vers la branche main comme ca on s'assure que la branche main reste intacte 
 
-parfait
