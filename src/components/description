@@ -1,0 +1,12 @@
+global components reutilisable dans toute l'application par exemple on pourra definir les button et bien d'autres choses voici un exemple de code
+
+const Button = () => {
+    return(
+        <div>
+            Je suis un button
+        </div>
+
+    )
+}
+
+export default Button  // ceci permettra d'exporter et d'utiliser ce button ou l'on voudras
