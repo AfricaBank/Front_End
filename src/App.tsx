@@ -1,36 +1,61 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import defaultLabelStyles from "../src/theme/style";
+import { Box, Text } from "@chakra-ui/react";
 
 function App() {
-  const [count, setCount] = useState(0)
+  // Fonction utilitaire pour transformer l'objet de style
+  const transformStyle = (styleObject: any) => ({
+    ...styleObject,
+    fontFamily: styleObject.fontFamily.regular,
+  });
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-          Welcome to Africa Bank Management
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Box maxHeight="100vh" padding={50}>
+        {/* Login */}
+        <Text style={transformStyle(defaultLabelStyles.FormLabel.loginStyle)}>
+          Login
+        </Text>
+        <Text style={transformStyle(defaultLabelStyles.FormLabel.loginStyle2)}>
+          Login
+        </Text>
+        <Text
+          style={transformStyle(defaultLabelStyles.FormLabel.passwordLogin)}
+        >
+          Mot de passe oublié
+        </Text>
+        <Text
+          style={transformStyle(defaultLabelStyles.FormLabel.baseStyleRegular)}
+        >
+          AfricaBank Main 15px
+        </Text>
+        <Text
+          style={transformStyle(defaultLabelStyles.FormLabel.baseStyleRegular2)}
+        >
+          AfricaBank Main 12px
+        </Text>
+        <Text
+          style={transformStyle(defaultLabelStyles.FormLabel.baseStyleMedium)}
+        >
+          AfricaBank NaveBar 14px
+        </Text>
+        <Text
+          style={transformStyle(defaultLabelStyles.FormLabel.baseStyleBold)}
+        >
+          AfricaBank Main 20px
+        </Text>
+        <Text
+          style={transformStyle(defaultLabelStyles.FormLabel.baseStyleBold2)}
+        >
+          AfricaBank Sidebar 15px
+        </Text>
+        <Text
+          style={transformStyle(defaultLabelStyles.FormLabel.baseStyleBold3)}
+        >
+          AfricaBank Main 17px
+        </Text>
+      </Box>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
