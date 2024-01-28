@@ -1,7 +1,14 @@
-import { Box } from "@chakra-ui/react";
+// import { Box } from "@chakra-ui/react";
+import GestionDossiers from "./components/GestionDossiers";
 
 function App() {
-  return <Box>Effectuere vos test ici</Box>;
+  return (
+  <div>
+    <GestionDossiers />
+  </div>
+
+
+  )
 }
 
 export default App;
