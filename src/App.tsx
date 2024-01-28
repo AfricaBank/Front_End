@@ -1,15 +1,7 @@
-import { Box, Text, FormLabel } from "@chakra-ui/react";
-import { defaultLabelStyles } from "../src/theme/style";
+import { Box } from "@chakra-ui/react";
 
 function App() {
-  return (
-    <Box>
-      <FormLabel style={defaultLabelStyles.FormLabel.baseStyle}>
-        Your Label Text
-      </FormLabel>
-      <Text style={defaultLabelStyles.FormLabel.baseStyle}>Salut</Text>
-    </Box>
-  );
+  return <Box>Effectuere vos test ici</Box>;
 }
 
 export default App;
