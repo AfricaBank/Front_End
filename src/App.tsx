@@ -1,16 +1,9 @@
-import { useState } from 'react'
-import './App.css'
-
-
-
-const theme = extendTheme({ colors });
-
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-   
+    <>
+     <h1>App page </h1>
+    </>
   );
-}
+};
 
-export default App
+export default App;
